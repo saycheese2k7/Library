@@ -6,28 +6,20 @@ function newbook(t, a, rt){
 
 let title, auth, time;
 
-function addbook(){
+function getbook(){
     title = document.getElementById("title").value;
     auth = document.getElementById("author").value; 
     time = document.getElementById("time").value;
-    return [title, auth, time];
+    /*return [title, auth, time];*/
 }
 
-let tit, aut, tim;
+let bk
+
+function addbook(){
+    bk = new newbook(title, auth, time);
+
+}
 
 function test(){
-    [tit, aut, tim] = addbook();
-    console.log(tit); 
+    console.log(bk);
 }
-
-function test2(){
-    console.log(tit);
-}
-
-
-
-/*
-function test(){
-    let title = document.getElementById('title').value;
-    console.log(title)
-};*/
