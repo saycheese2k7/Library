@@ -46,6 +46,13 @@ form > label, input{
 
 }
 
-.booklist{ 
+table{
+    font-family: Ubuntu, system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    min-width: 500px;
+    margin-top: 15px;
+    border: 1px solid var(--theme-color);
+}
 
+table > tbody:nth-child(even){
+    background-color: #41900057;
 }

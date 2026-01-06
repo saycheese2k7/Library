@@ -23,20 +23,27 @@
                 <label for="time">Time of Read</label>
                 <input type="date" id="time">
 
-                <input class="btn" type="button" value="Add Book" onclick="getbook(); addbook();">
+                <input class="btn" type="button" value="Add Book" onclick="getbook();addbook();test()">
         
             </form>
         </div>
         
         <div>
-            <table id="booklist"> 
+            <table>
+                <thead>
+                    <th>
+                        <td>Title</td>
+                        <td>Author's Name</td>
+                        <td>Time of Read</td>
+                    </th>
+                </thead>
+                <tbody id="booklist">
+
+                </tbody>
 
             </table>
         </div>
     </main>
-
-    <button onclick="test()">Test</button>
-    <button onclick="test2()">Test2</button>
 
     <script src="script.js"></script>
 </body>

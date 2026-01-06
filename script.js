@@ -13,13 +13,14 @@ function getbook(){
     /*return [title, auth, time];*/
 }
 
-let bk
+let book, text;
 
 function addbook(){
-    bk = new newbook(title, auth, time);
-
+    book = new newbook(title, auth, time);
+    text = '<tr>'+ '<td></td>' + '<td>'+book.title+'</td>'+'<td>'+book.author+'</td>'+'<td>'+book.timeOfRead+'</td>'+'</tr>';
 }
 
 function test(){
-    console.log(bk);
+    console.log(book);
+    document.getElementById("booklist").innerHTML += text;
 }
