@@ -17,7 +17,7 @@ let book, text;
 
 function addbook(){
     book = new newbook(title, auth, time);
-    text = '<tr>'+ '<td></td>' + '<td>'+book.title+'</td>'+'<td>'+book.author+'</td>'+'<td>'+book.timeOfRead+'</td>'+'</tr>';
+    text = '<tr>' + '<td>'+book.title+'</td>'+'<td>'+book.author+'</td>'+'<td>'+book.timeOfRead+'</td>'+'</tr>';
 }
 
 function test(){
